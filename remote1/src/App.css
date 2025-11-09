@@ -1,0 +1,85 @@
+.remote1-app {
+  padding: 1.5rem;
+}
+
+.remote-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.remote1-app h2 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.description {
+  color: #666;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.counter-container {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.counter-display {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.counter-label {
+  font-size: 1.2rem;
+  color: #666;
+  margin-right: 1rem;
+}
+
+.counter-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  background: #e8eaf6;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.info-box h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.info-box ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.5rem;
+}
+
+.info-box li {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.info-box code {
+  background: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #667eea;
+}
