@@ -14,12 +14,10 @@ const BadgeWrapper: React.FC<BadgeProps> = ({ count, label, color = 'blue' }) =>
 
   useEffect(() => {
     if (containerRef.current) {
-      // Unmount previous instance if it exists
       if (appRef.current) {
         appRef.current.unmount();
       }
 
-      // Create and mount Vue component with props
       appRef.current = createApp(VueBadge, {
         count,
         label,
@@ -28,7 +26,6 @@ const BadgeWrapper: React.FC<BadgeProps> = ({ count, label, color = 'blue' }) =>
       appRef.current.mount(containerRef.current);
     }
 
-    // Cleanup on unmount
     return () => {
       if (appRef.current) {
         appRef.current.unmount();
