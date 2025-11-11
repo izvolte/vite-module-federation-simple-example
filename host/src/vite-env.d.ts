@@ -46,3 +46,14 @@ declare module 'remote3/Badge' {
   const Badge: React.ComponentType<BadgeProps>;
   export default Badge;
 }
+
+declare module 'remote3/BadgeWebComponent' {
+  const BadgeWebComponent: any;
+  export default BadgeWebComponent;
+}
+
+declare namespace JSX {
+    interface IntrinsicElements {
+        'badge-web-component': any;
+    }
+}

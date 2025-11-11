@@ -1,5 +1,6 @@
 import React, { Suspense, useState } from 'react';
 import './App.css';
+import BadgeWebComponents from './components/BadgeWebComponents';
 
 const Remote1App = React.lazy(() => import('remote1/App'));
 const Remote2App = React.lazy(() => import('remote2/App'));
@@ -64,7 +65,7 @@ function App() {
               </div>
 
               <div className="demo-section">
-                <h3>Badges from Remote 3 (Vue):</h3>
+                <h3>Badges from Remote 3 (Vue wrapped in React):</h3>
                 <div className="button-group">
                   <Suspense fallback={<div>Loading...</div>}>
                     <Badge count={5} label="React" color="blue" />
@@ -72,6 +73,11 @@ function App() {
                     <Badge count={8} label="Shared" color="orange" />
                   </Suspense>
                 </div>
+              </div>
+
+              <div className="demo-section">
+                <h3>Badges from Remote 3 (Web Components):</h3>
+                <BadgeWebComponents />
               </div>
             </div>
           </div>

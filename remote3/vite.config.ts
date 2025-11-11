@@ -13,6 +13,7 @@ export default defineConfig({
       exposes: {
         './App': './src/wrappers/AppWrapper.tsx',
         './Badge': './src/wrappers/BadgeWrapper.tsx',
+        './BadgeWebComponent': './src/wrappers/BadgeWebComponent.ts',
       },
       shared: {
         vue: {
